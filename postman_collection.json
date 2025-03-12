@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "b9a137f3-5c6d-4e51-89c5-d34a3bb577ab",
+		"name": "Data Catalog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40186609",
+		"_collection_link": "https://www.postman.com/speeding-meteor-536539/workspace/icustomer/collection/40186609-b9a137f3-5c6d-4e51-89c5-d34a3bb577ab?action=share&source=collection_link&creator=40186609"
+	},
+	"item": [
+		{
+			"name": "Search Products",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Products",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"toothbrush\",\r\n    \"description\": \"comes in packs\",\r\n    \"price\": 15.95,\r\n    \"quantity\": 10,\r\n    \"category_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/create/?user_id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"create",
+						""
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"description": "admin",
+							"disabled": true
+						},
+						{
+							"key": "user_id",
+							"value": "2",
+							"description": "seller"
+						},
+						{
+							"key": "user_id",
+							"value": "3",
+							"description": "customer",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add User",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
